@@ -1,0 +1,181 @@
+body {
+  padding: 0;
+  background-color: rgb(225, 223, 223);
+}
+.header-title {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0px 10px;
+}
+.nav-banner {
+  height: 140px;
+}
+
+.login-btn {
+  background-color: #fff;
+  position: relative;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-userIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: normal;
+  color: #999;
+  margin: 0px 10px;
+}
+
+.login-direction {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  opacity: 0.3;
+  right: 25px;
+  transform: rotate(180deg);
+}
+
+.section-menu {
+  padding-top: 15px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.menu-item img {
+  width: 40px;
+}
+.menu-item span {
+  opacity: 0.5;
+}
+
+.section-event {
+  margin-top: 10px;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.event-rootIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.event-title {
+  font-size: 15px;
+  color: green;
+  margin: 0px 10px;
+}
+
+.event-direction {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  opacity: 0.3;
+  right: 25px;
+  transform: rotate(180deg);
+}
+
+.section-more {
+  margin-top: 10px;
+}
+
+.more-item {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.more-title {
+  font-size: 18px;
+  margin: 6px 0;
+}
+.more-info {
+  font-size: 12px;
+  color: #999;
+}
+.more-direction {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  opacity: 0.3;
+  right: 25px;
+  transform: rotate(180deg);
+}
+/* body {
+	padding: 0px;
+	background-color: var(--light-gray-color);
+}
+
+.welcome-btn {
+	background-color: var(--concept-color);
+	padding-right: 40px;
+	padding-left: 130px;
+  font-family: 'Hanna', fantasy;
+	color: #fff;
+	justify-content: flex-end;
+}
+
+.welcome-btn__title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: right;
+	margin: 5px;
+	font-size: 22px;
+}
+
+.welcome-btm__name-wrap {
+	text-align: right;
+	width: auto;
+	white-space: nowrap;
+	display: flex;
+	margin: 0px 8px;
+}
+
+.welcome-btn__name {
+	font-size: 26px;
+	text-decoration: underline;
+	transition: 0.5s;
+	margin-top: 3px;
+}
+
+.welcome-btn__end {
+	margin: 5px;
+	margin-right: -10px;
+}
+
+.welcome-img {
+	position: absolute;
+	width: 90px;
+	height: auto;
+	left: 50px;
+	bottom: 0px;
+} */
