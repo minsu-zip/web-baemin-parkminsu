@@ -1,4 +1,11 @@
 extends ../layout
 
 block content
-  h1 로그인페이지
+  link(rel='stylesheet', href='/stylesheets/signUp.css')
+
+  container.signUp-container
+    header
+      a.close-btn-wrapper(href='/')
+        button.close-btn
+          img(src='/images/x.svg')
+      h2.header-title 회원가입
