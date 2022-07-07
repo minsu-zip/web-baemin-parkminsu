@@ -59,6 +59,12 @@ main {
   margin: 0 15px;
 }
 
+.allCheckBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .agree-toggle-btn {
   display: flex;
   flex-direction: row;
