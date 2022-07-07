@@ -88,3 +88,31 @@ main {
   font-size: 15px;
   font-weight: 500;
 }
+
+footer {
+  display: block;
+  margin-top: 50%;
+}
+
+.social-login-btn {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-login-btn img {
+  width: 8px;
+  margin-right: 10px;
+}
+
+.signUp-link {
+  text-align: center;
+  margin-top: 20px;
+}
