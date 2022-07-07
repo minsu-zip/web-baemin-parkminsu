@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  .container 
-    div 안녕
+  link(rel='stylesheet', href='/stylesheets/signIn.css')
+
+  container.signIn-container
+    header
+      a.close-btn-wrapper(href='/')
+        button.close-btn
+          img(src='/images/x.svg')
