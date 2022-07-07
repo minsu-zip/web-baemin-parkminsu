@@ -1,6 +1,7 @@
 const $checkbox = document.querySelector('.clickEvent')
 const $checkList = document.querySelectorAll('.box-img')
 const $normalList = document.querySelectorAll('.normal')
+const $ageSelect = document.querySelector('.age-select-wrapper')
 
 // 체크박스 전체 off
 const checkOff = () => {
@@ -21,14 +22,12 @@ const checkOn = () => {
 // 다음으로 버튼 활성화 체크
 const nextButton = () => {
   let $nextBtn = document.querySelector('.square-button')
-  console.log($nextBtn)
   let checkValid = true
   $normalList.forEach((item) => {
     if (!item.classList.contains('checked')) {
       checkValid = false
     }
   })
-  console.log(checkValid)
   if (checkValid) {
     $nextBtn.disabled = false
     $nextBtn.classList.remove('disabled')
@@ -65,5 +64,17 @@ $checkbox.addEventListener('click', (e) => {
       e.target.src = '/images/checkedbox.png'
       classList.add('checked')
     }
+  }
+})
+
+// 나이 체크 이벤트
+$ageSelect.addEventListener('click', (e) => {
+  const { className, classList } = e.target
+  if (classList.contains('age-old-btn')) {
+    e.target.src = '/images/age-old-checked.png'
+    document.querySelector('.age-young-btn').src = '/images/age-young.png'
+  } else {
+    e.target.src = '/images/age-young-checked.png'
+    document.querySelector('.age-old-btn').src = '/images/age-old.png'
   }
 })
