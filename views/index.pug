@@ -1,5 +1,62 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+  .container 
+    header.header-title My 배민
+
+    nav
+      img.nav-banner(src='/images/banner.png')
+
+    main
+      section.section-login
+        a.login-btn(href='/signIn')
+          img.login-userIcon(src='/images/user.png')
+          .login-title 로그인 해주세요
+          img.login-direction(src='/images/left.svg')
+
+      section.section-menu
+        .menu-item
+          img(src='/images/point.png')
+          span 포인트
+        .menu-item
+          img(src='/images/coupon.png')
+          span 쿠폰함
+        .menu-item
+          img(src='/images/present.png')
+          span 선물함
+        .menu-item
+          img(src='/images/cart.png')
+          span 찜
+        .menu-item
+          img(src='/images/order.png')
+          span 주문내역
+        .menu-item
+          img(src='/images/review.png')
+          span 리뷰관리
+
+      section.section-event
+        img.event-rootIcon(src='/images/root.png')
+        .event-title 일회용품 덜 쓰기, 함께해요!
+        img.event-direction(src='/images/left.svg')
+
+      section.section-more
+        .more-item
+          .more-title 배민페이 등록
+          .more-info 배민페이로 결제하면 최대 5.5% 배민포인트가 적립됩니다!
+          img.more-direction(src='/images/left.svg')
+
+        .more-item
+          .more-title 가족계정관리
+          .more-info 결제수단을 공유해 우리 가족의 끼니를챙겨주세요.
+          img.more-direction(src='/images/left.svg')
+
+        .more-item
+          .more-title 공지사항
+          img.more-direction(src='/images/left.svg')
+
+        .more-item
+          .item-container
+          .more-title 배민커넥트 지원
+          img.more-direction(src='/images/left.svg')
