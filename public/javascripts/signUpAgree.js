@@ -2,6 +2,7 @@ const $checkbox = document.querySelector('.clickEvent')
 const $checkList = document.querySelectorAll('.box-img')
 const $normalList = document.querySelectorAll('.normal')
 const $ageSelect = document.querySelector('.age-select-wrapper')
+const $nextBtn = document.querySelector('.square-button')
 
 // 체크박스 전체 off
 const checkOff = () => {
@@ -21,7 +22,6 @@ const checkOn = () => {
 
 // 다음으로 버튼 활성화 체크
 const nextButton = () => {
-  let $nextBtn = document.querySelector('.square-button')
   let checkValid = true
   $normalList.forEach((item) => {
     if (!item.classList.contains('checked')) {
@@ -60,9 +60,11 @@ $checkbox.addEventListener('click', (e) => {
       $allCheckBtn = document.querySelector('.all')
       $allCheckBtn.classList.remove('checked')
       $allCheckBtn.src = '/images/checkbox.png'
+      nextButton()
     } else {
       e.target.src = '/images/checkedbox.png'
       classList.add('checked')
+      nextButton()
     }
   }
 })
@@ -76,5 +78,12 @@ $ageSelect.addEventListener('click', (e) => {
   } else {
     e.target.src = '/images/age-young-checked.png'
     document.querySelector('.age-old-btn').src = '/images/age-old.png'
+  }
+})
+
+// 다음 페이지 이동 클릭 이벤트
+$nextBtn.addEventListener('click', () => {
+  if (!$nextBtn.classList.contains('disabled')) {
+    location.href = '/signUp/account'
   }
 })
