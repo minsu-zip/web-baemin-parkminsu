@@ -1,4 +1,60 @@
 extends ../layout
 
 block content
-  h1 로그인페이지
+  link(rel='stylesheet', href='/stylesheets/signUp.css')
+
+  container.signUp-container
+    header
+      a.close-btn-wrapper(href='/')
+        button.close-btn
+          img(src='/images/x.svg')
+      h2.header-title 회원가입
+    main
+      .welcome-sign
+        .line1 어서오세요
+        .line2 약관동의가 필요해요
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.all
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 전체동의
+        img.agree-direction(src='/images/left.svg')
+      .bar
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.normal
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 배달의 민족 이용약관 동의
+        img.agree-direction(src='/images/left.svg')
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.normal
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 전자금융거래 이용약관 동의
+        img.agree-direction(src='/images/left.svg')
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.normal
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 개인정보 수집이용 동의
+        img.agree-direction(src='/images/left.svg')
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.non-essential
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 개인정보 제3자 제공 동의 (선택)
+        img.agree-direction(src='/images/left.svg')
+
+      .agree-box-wrapper 
+        .agree-toggle-btn.non-essential
+          img.box-img(src='/images/checkbox.png')
+          .agree-text 마케팅 정보 메일, SMS 수신동의 (선택)
+        img.agree-direction(src='/images/left.svg')
+      .bar
+
+      .age-select-wrapper
+        img.age-old-btn.checked(src='/images/age-old-checked.png')
+        img.age-young-btn(src='/images/age-young.png')
+
+      .next-btn-wrapper
+        button.square-button.disabled(disabled) 다음으로
