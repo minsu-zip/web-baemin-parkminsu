@@ -8,3 +8,26 @@ block content
       a.close-btn-wrapper(href='/')
         button.close-btn
           img(src='/images/x.svg')
+
+    main
+      section
+        form.login-form
+          .form-input-wrapper
+            .login-input
+              input(type='text', name='email', placeholder='아이디 또는 이메일')
+              .error-msg
+                span.empty 항목을 입력하세요.
+                span.invalid 아이디와 비밀번호 확인하세요
+
+            .login-input
+              input(type='text', name='password', placeholder='비밀번호')
+              .error-msg
+                span.empty 항목을 입력하세요.
+                span.invalid 아이디와 비밀번호 확인하세요
+
+            .login-btn
+              button.login-submit(type='submit') 로그인
+        .find-info
+          .find-userInfo 아이디 찾기
+          span |
+          .find-userInfo 비밀번호 찾기
