@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/signIn.css')
+
+  container.signIn-container
+    header
+      a.close-btn-wrapper(href='/')
+        button.close-btn
+          img(src='/images/x.svg')
+
+    main
+      section
+        form.login-form
+          .form-input-wrapper
+            .login-input
+              input(type='text', name='email', placeholder='아이디 또는 이메일')
+              .error-msg
+                span.emptyId 항목을 입력하세요.
+                span.invalid 아이디와 비밀번호 확인하세요
+
+            .login-input
+              input(type='text', name='password', placeholder='비밀번호')
+              .error-msg
+                span.emptyPw 항목을 입력하세요.
+                span.invalid 아이디와 비밀번호 확인하세요
+
+            .login-btn
+              button.login-submit(type='submit') 로그인
+        .find-info
+          .find-userInfo 아이디 찾기
+          span |
+          .find-userInfo 비밀번호 찾기
+
+    footer
+      .social-login-btn
+        img(src='/images/facebook.png')
+        span 페이스북으로 로그인
+
+      .social-login-btn
+        img(src='/images/naver.png')
+        span 네이버로 로그인
+
+      .social-login-btn
+        img(src='/images/apple.png')
+        span Apple로 로그인
+
+      .signUp-link
+        span 혹시, 배달의 민족이 처음이신가요?
+        a(href='/signUp') 회원가입
+  script(src='/javascripts/signIn.js', type='module')
