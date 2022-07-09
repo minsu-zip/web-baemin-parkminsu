@@ -1,4 +1,14 @@
 extends ../layout
 
 block content
-  h2 안녕
+  link(rel='stylesheet', href='/stylesheets/signUp/phone.css')
+
+  container.phone-container 
+    header
+      div
+        a(href='/signUp')
+          img.backIcon(src='/images/back.png')
+      div
+        h2.header-title 회원가입
+      div
+        button.next-btn.disabled(disabled) 다음
