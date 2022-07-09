@@ -8,6 +8,20 @@ const verifyPhoneNumber = (e) => {
     .replace(/\-{1,2}$/g, '')
 }
 
+// 체크 표시 비/활성화
+const checkIcon = (len) => {
+  const phoneNumberLength = 13
+  const $inputCheckIcon =
+    document.querySelector('.input-checkIcon').childNodes[0]
+
+  if (len === phoneNumberLength) {
+    $inputCheckIcon.style.opacity = 1
+  } else {
+    $inputCheckIcon.style.opacity = 0.2
+  }
+}
+
 $phoneNumber.addEventListener('keyup', (e) => {
   verifyPhoneNumber(e)
+  checkIcon(e.target.value.length)
 })
