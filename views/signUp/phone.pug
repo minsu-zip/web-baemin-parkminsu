@@ -22,4 +22,12 @@ block content
             img(src='/images/remove.png')
           .input-checkIcon
             img(src='/images/check.svg')
-        .phone-error
+
+      .certifyBtn-wrapper.show
+        button.certifyBtn.disabled(disabled) 인증번호 받기
+
+      .certify-wrapper.show
+        .certify-title 인증번호
+        .certify-input-wrapper
+          input.certify-number(readonly)
+        button.newCertify 인증번호 다시받기
