@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/signUp/phone.css')
+
+  container.phone-container 
+    header
+      div
+        a(href='/signUp')
+          img.backIcon(src='/images/back.png')
+      div
+        h2.header-title 회원가입
+      div
+        button.next-btn.disabled(disabled) 다음
+
+    main.signUp-container 
+      .phoneNumber-wrapper
+        .phone-title 휴대전화
+        .phone-input-wrapper
+          input.input-phoneNumber(placeholder='010-1111-1111', maxlength='13')
+          .input-removeIcon
+            img(src='/images/remove.png')
+          .input-checkIcon
+            img(src='/images/check.svg')
+
+      .certifyBtn-wrapper.show
+        button.certifyBtn.disabled(disabled) 인증번호 받기
+
+      .certify-wrapper
+        .certify-title 인증번호
+        .certify-input-wrapper
+          input.certify-number(readonly)
+        button.newCertify 인증번호 다시받기
