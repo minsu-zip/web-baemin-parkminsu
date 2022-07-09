@@ -84,6 +84,6 @@ $ageSelect.addEventListener('click', (e) => {
 // 다음 페이지 이동 클릭 이벤트
 $nextBtn.addEventListener('click', () => {
   if (!$nextBtn.classList.contains('disabled')) {
-    location.href = '/signUp/account'
+    location.href = '/signUp/phone'
   }
 })
