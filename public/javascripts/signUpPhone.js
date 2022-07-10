@@ -36,9 +36,18 @@ const checkButton = (result) => {
   $certifyBtn.disabled = result
 }
 
+// 인증번호 받기 클릭 이벤트
+const clickButton = () => {
+  $removeIcon.style.display = 'none'
+  $certifyBtn.style.display = 'none'
+  document.querySelector('.certify-wrapper').style.display = 'flex'
+}
+
 $phoneNumber.addEventListener('keyup', (e) => {
   verifyPhoneNumber(e)
   checkIcon()
 })
 
 $removeIcon.addEventListener('click', removeIcon)
+
+$certifyBtn.addEventListener('click', clickButton)
