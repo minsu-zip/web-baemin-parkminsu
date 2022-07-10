@@ -82,10 +82,8 @@ main {
   width: 25px;
   opacity: 0.2;
 }
+
 .certifyBtn-wrapper {
-  display: none;
-}
-.certifyBtn-wrapper.show {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -106,11 +104,8 @@ main {
 }
 
 .certify-wrapper {
-  display: none;
-}
-
-.certify-wrapper.show {
   display: flex;
+  display: none;
   flex-direction: column;
   box-sizing: border-box;
   padding: 0 10px;
