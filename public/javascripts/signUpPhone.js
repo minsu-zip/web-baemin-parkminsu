@@ -1,4 +1,6 @@
 const $phoneNumber = document.querySelector('.input-phoneNumber')
+const $removeIcon = document.querySelector('.input-removeIcon')
+const $certifyBtn = document.querySelector('.certifyBtn')
 
 // 휴대폰 번호 입력 검증
 const verifyPhoneNumber = (e) => {
@@ -21,7 +23,15 @@ const checkIcon = () => {
   }
 }
 
+// 입력 값 삭제 아이콘
+const removeIcon = () => {
+  $phoneNumber.value = ''
+  checkIcon()
+}
+
 $phoneNumber.addEventListener('keyup', (e) => {
   verifyPhoneNumber(e)
   checkIcon()
 })
+
+$removeIcon.addEventListener('click', removeIcon)
