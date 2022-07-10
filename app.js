@@ -10,7 +10,7 @@ const logger = require('morgan')
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
 const signInRouter = require('./routes/signIn')
-const signUpRouter = require('./routes/signUp/index')
+const signUpRouter = require('./routes/signUp')
 
 const app = express()
 
