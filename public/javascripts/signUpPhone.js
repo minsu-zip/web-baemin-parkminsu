@@ -18,8 +18,10 @@ const checkIcon = () => {
 
   if ($phoneNumber.value.length === phoneNumberLength) {
     $inputCheckIcon.style.opacity = 1
+    checkButton(false)
   } else {
     $inputCheckIcon.style.opacity = 0.2
+    checkButton(true)
   }
 }
 
@@ -27,6 +29,11 @@ const checkIcon = () => {
 const removeIcon = () => {
   $phoneNumber.value = ''
   checkIcon()
+}
+
+// 인증번호 받기 버튼 비/활성화
+const checkButton = (result) => {
+  $certifyBtn.disabled = result
 }
 
 $phoneNumber.addEventListener('keyup', (e) => {
