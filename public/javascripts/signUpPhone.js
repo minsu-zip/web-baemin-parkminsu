@@ -1,7 +1,7 @@
 const $phoneNumber = document.querySelector('.input-phoneNumber')
 const $removeIcon = document.querySelector('.input-removeIcon')
 const $certifyBtn = document.querySelector('.certifyBtn')
-
+const $newCertify = document.querySelector('.newCertify')
 // 휴대폰 번호 입력 검증
 const verifyPhoneNumber = (e) => {
   e.target.value = e.target.value
@@ -41,6 +41,23 @@ const clickButton = () => {
   $removeIcon.style.display = 'none'
   $certifyBtn.style.display = 'none'
   document.querySelector('.certify-wrapper').style.display = 'flex'
+  randomAuthentication()
+}
+
+// 4자리 랜덤 인증 번호 생성기
+const randomAuthentication = async () => {
+  let answer = ''
+  let waitTime = 2000
+  const $certifyNumber = document.querySelector('.certify-number')
+
+  await setTimeout(() => {
+    for (let i = 0; i < 4; i++) {
+      answer += Math.floor(Math.random() * 10)
+    }
+    $certifyNumber.value = answer
+  }, waitTime)
+
+  document.querySelector('.next-btn').disabled = false
 }
 
 $phoneNumber.addEventListener('keyup', (e) => {
@@ -51,3 +68,5 @@ $phoneNumber.addEventListener('keyup', (e) => {
 $removeIcon.addEventListener('click', removeIcon)
 
 $certifyBtn.addEventListener('click', clickButton)
+
+$newCertify.addEventListener('click', randomAuthentication)
