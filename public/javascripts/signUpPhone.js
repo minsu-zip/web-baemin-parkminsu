@@ -2,6 +2,8 @@ const $phoneNumber = document.querySelector('.input-phoneNumber')
 const $removeIcon = document.querySelector('.input-removeIcon')
 const $certifyBtn = document.querySelector('.certifyBtn')
 const $newCertify = document.querySelector('.newCertify')
+const $nextBtn = document.querySelector('.next-btn')
+
 // 휴대폰 번호 입력 검증
 const verifyPhoneNumber = (e) => {
   e.target.value = e.target.value
@@ -57,16 +59,18 @@ const randomAuthentication = async () => {
     $certifyNumber.value = answer
   }, waitTime)
 
-  document.querySelector('.next-btn').disabled = false
+  $nextBtn.disabled = false
+}
+
+const nextBtn = () => {
+  window.location.href = '/signUp/account'
 }
 
 $phoneNumber.addEventListener('keyup', (e) => {
   verifyPhoneNumber(e)
   checkIcon()
 })
-
 $removeIcon.addEventListener('click', removeIcon)
-
 $certifyBtn.addEventListener('click', clickButton)
-
 $newCertify.addEventListener('click', randomAuthentication)
+$nextBtn.addEventListener('click', nextBtn)
