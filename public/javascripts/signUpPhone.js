@@ -21,7 +21,7 @@ const checkIcon = () => {
   }
 }
 
-$phoneNumber.addEventListener('keydown', (e) => {
+$phoneNumber.addEventListener('keyup', (e) => {
   verifyPhoneNumber(e)
   checkIcon()
 })
