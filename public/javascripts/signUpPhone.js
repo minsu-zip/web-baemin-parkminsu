@@ -57,9 +57,8 @@ const randomAuthentication = async () => {
       answer += Math.floor(Math.random() * 10)
     }
     $certifyNumber.value = answer
+    $nextBtn.disabled = false
   }, waitTime)
-
-  $nextBtn.disabled = false
 }
 
 const nextBtn = () => {
