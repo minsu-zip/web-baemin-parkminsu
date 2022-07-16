@@ -10,4 +10,8 @@ router.get('/phone', function (req, res, next) {
   res.render('signUp/phone')
 })
 
+router.get('/account', function (req, res, next) {
+  res.render('signUp/account')
+})
+
 module.exports = router
