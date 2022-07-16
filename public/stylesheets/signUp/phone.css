@@ -1,0 +1,144 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.backIcon {
+  width: 20px;
+}
+
+.header-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.next-btn {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main {
+  padding: 5px 10px;
+}
+
+.signUp-container {
+  width: 100%;
+  padding: 5px;
+}
+
+.phoneNumber-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.phoneNumber-wrapper.focus .phone-title {
+  color: black;
+}
+
+.phone-title {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.input-phoneNumber {
+  all: unset;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.input-removeIcon {
+  position: absolute;
+  right: 35px;
+}
+
+.input-removeIcon img {
+  width: 20px;
+}
+
+.input-checkIcon {
+  position: absolute;
+  right: 0;
+}
+
+.input-checkIcon img {
+  width: 25px;
+  opacity: 0.2;
+}
+
+.certifyBtn-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.certifyBtn {
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.certify-wrapper {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.certify-wrapper.focus .phone-title {
+  color: black;
+}
+
+.certify-title {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.certify-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.certify-number {
+  all: unset;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.newCertify {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  margin-top: 10px;
+  align-self: flex-end;
+  color: #2ac1bc;
+}

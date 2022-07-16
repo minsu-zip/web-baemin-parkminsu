@@ -56,8 +56,19 @@ main {
   padding-top: 5px;
 }
 
-.error-msg span {
+.emptyId {
   display: none;
+  font-size: 11px;
+  color: red;
+}
+
+.emptyPw {
+  display: none;
+  font-size: 11px;
+  color: red;
+}
+
+.invalid {
   font-size: 11px;
   color: red;
 }
@@ -91,7 +102,7 @@ main {
 
 footer {
   display: block;
-  margin-top: 50%;
+  margin-top: 30%;
 }
 
 .social-login-btn {

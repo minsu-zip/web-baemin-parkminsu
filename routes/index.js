@@ -3,8 +3,8 @@ var router = express.Router()
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  const userId = req.session.userId || '로그인 해주세요'
-  res.render('index', { userId })
+  const nickname = req.session.nickname || '로그인 해주세요'
+  res.render('index', { nickname })
 })
 
 module.exports = router

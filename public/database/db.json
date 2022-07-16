@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "email": "mimsu@minsu.com",
+      "nickname": "minsu",
+      "password": "asdzxc123!@#",
+      "birthday": "1999.01.01"
+    }
+  ]
+}
