@@ -5,6 +5,21 @@
 
 #### 프로젝트 소개 : node express 활용한 simple 회원가입/로그인 기능 (SSR)
 
+## Getting Started
+
+### install Packages
+
+```
+npm install
+```
+
+### run application
+
+```
+npm start
+```
+
+
 #### 메인 페이지 & 로그인 페이지
 - 첫페이지에서 ‘로그인해주세요' 버튼 클릭 시, 로그인 페이지로 이동
 - 세션에 사용자 정보가 있는 경우 사용자 이름 표시
